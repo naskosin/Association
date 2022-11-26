@@ -1,0 +1,33 @@
+img{
+    display: inline-block;
+
+    margin: 100px 10px;
+    height: 150px;
+    width:200px
+}
+section {
+    margin: 0 100px;
+    box-sizing: border-box;
+
+}
+section a{
+    display: inline-block;
+    margin: 0px 90px;
+    width: 20%;
+}
+
+.comments{
+    display: inline-block;
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+.newComment{
+    width:40%;
+    font-size: 40px;
+}
+.createButton{
+    width:10%;
+    padding: 5x 2px;
+
+}
