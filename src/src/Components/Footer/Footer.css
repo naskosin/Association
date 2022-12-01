@@ -1,0 +1,33 @@
+
+
+
+
+footer{
+    background-color: gray;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0074D9;
+    list-style-type: none;
+
+}
+.footer_nav{
+    background-color: #0074D9;
+
+}
+.footer_nav ul{
+    list-style-type: none;
+
+}
+i{
+    color: aliceblue;
+}
+.fab {
+    color: aliceblue;
+    font-size: 20px;
+    background-color: black;
+}
