@@ -3,21 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 
 
-
-header>h1{
+.MyHeader{
     display: inline-block;
+}
+.MyHeader_h1{
+ 
     margin:20px 50px;
     color: white;
 }
-a {
+.MyHeader a {
     font-family: Dancing Script;
+    
 }
 
-p {
+.MyHeader a:hover{
+    border-top: solid 2px white;
+}
+
+
+.MyHeader_p {
     font-family: Spicy Rice;
 }
 
-.ul {
+.MyHeader_ul {
     display:flex;
 flex-direction:row;
 color:blueviolet;
@@ -29,10 +37,10 @@ justify-content:center;
 font-size: 30px;
 }
 
-li{
+.MyHeader_ul li{
 text-decoration: none;
 }
-header a{
+.MyHeader a{
     text-decoration: none;
     width: 40%;
     
@@ -45,14 +53,14 @@ nav{
    
 
 }
-header{
+.MyHeader{
     width:100%;
 
     background-color: #0074D9;
 
 
 }
-.greeting{
+.MyHeader_p{
     position: absolute;
    top: 0px;
     right: 50px;
@@ -81,11 +89,37 @@ border: 0em;
 }
 .cascade {
     list-style-type: none;
+    font-family: Dancing Script;
+
 }
 .cascades:hover .cascade{
     display: block;
 }
 .cascades{
     position:relative;
-    /* left: 100% */
+    font-family: Dancing Script;
+
+}
+.buttons_ul{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+    width: 20%;
+    margin:0px;
+    padding: 0;
+}
+.buttons_ul li{
+    list-style-type: none;
+    width: 100%;
+   
+}
+.buttons_ul button{
+    width: fit-content;
+ 
+
+}
+.MyHeader_div{
+    display: inline-block;
 }

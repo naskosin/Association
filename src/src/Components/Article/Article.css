@@ -1,0 +1,20 @@
+
+
+
+.article_h2{
+    text-align: right;
+    border-bottom: solid 1px blue;
+    padding: 2px;
+}
+
+.articlep{
+    color:blue;
+    text-align: justify;
+    font-style: italic;
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}

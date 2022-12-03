@@ -1,50 +1,50 @@
 import './Footer.css';
-
+import { Link } from 'react-router-dom';
 export const Footer = ()=>{
     return (
         <footer>
-        <div className={styles.description}>
-          <img className={styles.footer__img} src="./assets/61.jpg" alt="Baits" />
-          <p className={styles.description__p}>
+        <div className="description">
+            <img src='Flag_of_the_Red_Cross.svg.png'  className="description__img"/>
+          <p className="description__p">
             Spinning is one of the most widespread and popular techniques around
             the world for that can be done in both saltwater and freshwater.
           </p>
         </div>
-        <nav>
-          <ul className={styles.description__ul}>
-            <li className={styles.footer__li}>
+    
+          <ul className="description__ul">
+            <li className="footer__li">
               <i className="fab fa-facebook"></i>
               <a
-                className={styles.footer__a}
+                className="footer__a"
                 href="https://www.facebook.com/groups/262191725221158"
               >
                 Facebook
               </a>
             </li>
-            <li className={styles.footer__li}>
+            <li className="footer__li">
               <i className="fab fa-twitter"></i>
-              <a className={styles.footer__a} href="https://twitter.com">
+              <a  className="footer__a" href="https://twitter.com">
                 Twitter
               </a>
             </li>
-            <li className={styles.footer__li}>
+            <li className="footer__li">
               <i className="fab fa-instagram"></i>
-              <a className={styles.footer__a} href="https://instagram.com">
+              <a className="footer__a" href="https://instagram.com">
                 Instagram
               </a>
             </li>
           </ul>
-        </nav>
-        <ul>
-          <li className={styles.footer__li}>
+      
+        <ul className="description__ul">
+          <li className="footer__li">
             <i className="fa-solid fa-fish"></i>
-            <Link className={styles.footer__a} to="/about">
+            <Link className="footer__a" to="/about">
               About
             </Link>
           </li>
-          <li className={styles.footer__li}>
+          <li className="footer__li">
             <i className="fa-solid fa-fish"></i>
-            <Link className={styles.footer__a} to="/contacts">
+            <Link className="footer__a" to="/contacts">
               Contacts
             </Link>
           </li>

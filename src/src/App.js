@@ -1,5 +1,6 @@
 import {Register} from './Components/Register/Register';
 import { useState } from 'react';
+import { Footer } from './Components/Footer/Footer';
 import { Articles } from './Components/Articles/Articles';
 import { Header } from './Components/Header/Header';
 import { Forum } from './Components/Forum';
@@ -45,13 +46,10 @@ const initialValue = {user:'', email:'', accessToken: ''}
       </Routes>
       </main>
        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        
-          Learn React
+       
         
       </header>
+      <Footer/>
     </div>
     
   );

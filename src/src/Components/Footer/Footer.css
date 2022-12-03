@@ -19,12 +19,21 @@ footer{
     background-color: #0074D9;
 
 }
-.footer_nav ul{
+.description__img{
+    width: 30%;
+
+}
+.description__ul{
     list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    width: 30%;
+    margin-left: 150px;
 
 }
 i{
-    color: aliceblue;
+    color:blueviolet;
+    font-size: 20px;
 }
 .fab {
     color: aliceblue;
