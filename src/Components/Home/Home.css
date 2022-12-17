@@ -1,19 +1,37 @@
-img{
-    width: 60%;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+section{
+    width: 80%;
     height:auto;
-    animation-name: example;
-  animation-duration: 4s;
-  animation-direction: reverse;
+    margin: 100px 50px;
+  text-align: center;
+  display: inline-block;
+  
+  }
+  
+h1{
+    display: inline-block;
+    width: 35%;
+    text-align: justify;
+    vertical-align:top;
+    margin-top: 150px;
+    font-size: 80px;
+    text-indent: 40px;
 }
 
-@keyframes example {
-    from {
-      margin-left: 50%;
-      width: 50%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+h1{
+    font-family: Dancing Script;
   }
+/* @keyframes example { */
+    /* from { */
+      /* margin-left: 50%; */
+      /* width: 100%; */
+    /* } */
+  /*  */
+    /* to { */
+      /* margin-left: 0%; */
+      /* width: 100%; */
+    /* } */
+  /* } */

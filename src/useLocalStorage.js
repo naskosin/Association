@@ -1,10 +1,13 @@
+import {useState} from 'react';
 
-let initialState = {user: "", email: "", password:""}
+
+const initialState = {user:'', email:'', accessToken: ''}
+
 export const useLocalStrage=(key, initialState)=>{
 
     const [user, setUser] = useState(()=>{
         let item = localStorage.getItem(key);
-        item ? JSON.parse(item ):  initialState;
+       return item ? JSON.parse(item ):  initialState;
     });
 
     const setItem = (value)=>{

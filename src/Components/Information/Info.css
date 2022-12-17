@@ -1,0 +1,17 @@
+.InfoSection{
+background-color: aliceblue;
+color: black;
+margin:0
+
+
+}
+.title{
+    background-color: aliceblue; 
+    text-align: center;
+}
+.InfoSection p{
+    text-align: left;
+    padding: 5px 50px;
+    font-size: 18px;
+    
+    }

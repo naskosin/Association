@@ -1,0 +1,37 @@
+
+
+
+.article_h2{
+    text-align: right;
+    border-bottom: solid 1px blue;
+    padding: 5px;
+    font-size: 2rem;
+
+}
+
+.articlep{
+    color:blue;
+    text-align: justify;
+    font-style: italic;
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+
+    display: -webkit-box ;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    width:80%;
+    margin: 50px auto;
+}
+.articlep:hover{
+    color:red;
+    text-align: center;
+    font-style: italic;
+
+    background-color: #fef6ec;
+    display: block ;
+    
+    white-space: normal;
+    width:90%;
+    margin: 10px auto;
+}

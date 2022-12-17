@@ -1,8 +1,16 @@
-import './Home.css'
+import './Home.css';
+import { CarouselComponent } from '../Carousel/CarouselComponent';
 
-
+const image1 = "Пластична-хирургия.jpg";
+const image2 = "Пластична-естетична-хирургия-1.webp";
+const image3 = "estetikplastikverekonstruktifcerrahijpg_fc4a.jpg";
+const image4 = "at-home-face-lift.jpg";
 export const Home = () =>{
+const images = [image1, image2, image3, image4]
     return(
-        <img src='Пластична-хирургия.jpg' />
+        <section>
+       
+       <CarouselComponent image={images}/> 
+        </section>
     )
 }

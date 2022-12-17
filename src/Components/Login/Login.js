@@ -3,12 +3,15 @@ import  './Login.css';
 import { loginPas } from '../../loginService';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLocalStrage } from '../../useLocalStorage';
+import { useAuthContext } from '../../authContext';
 
-export const Login = ({onLogin})=>{
+export const Login = ()=>{
 
 
-  //const nasko = Promise.resolve(123);
-  //nasko.then(data=>console.log(data));
+const {user, setUser} = useAuthContext();
+
+
   const navigate = useNavigate();
 
   const pas = useRef('');
@@ -25,7 +28,7 @@ export const Login = ({onLogin})=>{
        const password = pas.current.value;
        console.log(email);
       
-     loginPas(email, password).then(data=>{onLogin(data)})
+     loginPas(email, password).then(data=>{setUser(data)})
       navigate("/")
       
     }

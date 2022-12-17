@@ -1,0 +1,39 @@
+
+.articles{
+    width: 100%;
+margin: 0;
+text-align: center;
+    display: inline-block;
+    
+
+
+}
+.articlesUl{
+    text-align: left;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px 50px;
+    width: 100%;
+}
+.articlesUl li{
+    padding:20px;
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+    color:black;
+    background-color: aliceblue;
+    margin: 2% calc((12%/6));
+    background: #d59bf6; 
+    border-radius: 50px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.44);
+  
+
+
+}
+.articlesUl li p{
+    text-indent: 25px;
+    width: 90%;
+}

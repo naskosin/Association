@@ -1,0 +1,31 @@
+.Contacts{
+    background-color: #fef6ec;
+    border-radius: 50px;
+}
+.Contacts__div{
+    width:30%;
+    height: auto;
+vertical-align: top;
+    background-color: black;
+    display: inline-block;
+    
+
+}
+.Contacts__div__ul li:first-of-type {
+text-align: center;
+}
+.Contacts__div__ul{
+    display: inline-block;
+    width:100%;
+    list-style: none;
+    text-align: left;
+    padding:  0 0 0 20px;
+}
+svg{
+    width: 60%;
+    height: auto;
+    display: inline-block;
+}
+svg g{
+    width: 100%;
+}

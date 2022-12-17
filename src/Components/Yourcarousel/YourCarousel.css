@@ -1,0 +1,96 @@
+.carousel-container{
+    display:flex;
+ width: 80%;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 10%;
+    border: solid 2px black;
+}
+.carousel-item{
+    display:flex;
+transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+   height: 500px;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    width:500px;
+  
+}
+.slideIn{
+    animation-name: fade;
+    animation-duration: 3s;
+    position: absolute;
+    top: 
+    300px;
+    right: 500px;
+    font-size: 50px;
+    color:#f87171 ;
+    margin: 0px;
+    display: block;
+}
+.slideIn2{
+    animation-name: fader;
+    animation-duration: 3s;
+    position: absolute;
+    top: 
+    300px;
+    right: 500px;
+    font-size: 60px;
+    color:#f87171 ;
+    margin: 0px;
+    display: block;
+}
+.dots{
+    background-color: blueviolet;
+    display:flex;
+    width:100%;
+    justify-content: center;
+
+}
+.myDots{
+    background-color: white;
+    display:flex;
+    border-radius: 50px;
+    width:20px;
+    height:20px;
+    margin: 10px
+}
+.active{
+    background-color: blue;
+
+}
+.position__left{
+    position: relative;
+    top: 250px;
+    right: 800px
+}
+.position__right{
+    position: relative;
+    top: 250px;
+    left: 800px
+}
+@keyframes fade{
+    
+    0%{ opacity: 0;
+        transform:translate3d(0%,100%,0)}
+      
+      100%{
+        opacity: 1;
+        transform:none;
+      }
+    
+}
+
+@keyframes fader{
+    
+    0%{ opacity: 0;
+        transform:translate3d(0%,100%,0)}
+      
+      100%{
+        opacity: 1;
+        transform:none;
+      }
+    
+}

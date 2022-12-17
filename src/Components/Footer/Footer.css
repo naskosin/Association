@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0074D9;
+    list-style-type: none;
+
+}
+.footer_nav{
+    background-color: #0074D9;
+
+}
+.description__img{
+    width: 30%;
+
+}
+.description__ul{
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    width: 30%;
+    margin-left: 150px;
+ 
+}
+i{
+    color:white;
+    font-size: 20px;
+}
+.fab {
+    color: aliceblue;
+    font-size: 20px;
+    background-color: black;
+}

@@ -33,3 +33,9 @@ export async function createComment(token, text){
      let result = await res.json();
      return result;
     };
+
+
+
+    function fetcher (){
+      
+    }

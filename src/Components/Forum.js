@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import { commentService } from "../cmmentService";
 import { createComment } from "../cmmentService";
 import { Comment } from "./Comment/Comment";
+import { useAuthContext } from "../authContext";
 import { useEffect, useState } from "react";
-export const Forum = ({user}) => {
+export const Forum = () => {
   const [comments, setComments] = useState([]);
   const [dateState, setDateState] = useState(new Date());
-console.log(user)
+
+const {user } = useAuthContext();
+
+
   useEffect(() => {
     commentService().then((data) => {
       console.log(data);
@@ -20,6 +24,7 @@ console.log(user)
   //const token = localStorage.getItem("user");
   //const user = JSON.parse(token);
   const email = user.email;
+  
   const updateData = () => {
     commentService().then((data) => {
       console.log(data);

@@ -3,15 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 
 
-a {
+.MyHeader{
+    display: inline-block;
+}
+.MyHeader_h1{
+ 
+    margin:20px 50px;
+    color: white;
+}
+.MyHeader a {
     font-family: Dancing Script;
+    
 }
 
-p {
+.MyHeader a:hover{
+    border-top: solid 2px white;
+}
+
+
+.MyHeader_p {
     font-family: Spicy Rice;
 }
 
-.ul {
+.MyHeader_ul {
     display:flex;
 flex-direction:row;
 color:blueviolet;
@@ -23,10 +37,10 @@ justify-content:center;
 font-size: 30px;
 }
 
-li{
+.MyHeader_ul li{
 text-decoration: none;
 }
-header a{
+.MyHeader a{
     text-decoration: none;
     width: 40%;
     
@@ -39,24 +53,30 @@ nav{
    
 
 }
-header{
+.MyHeader{
     width:100%;
-    text-align: right;
+
     background-color: #0074D9;
 
 
 }
-.greeting{
+.MyHeader_p{
     position: absolute;
    top: 0px;
     right: 50px;
-    font-size: 30px;
+    font-size: 20px;
 color:whitesmoke
 
 
 }
 .button{
     width: 100%;
+    background-color: none;
+    color: black;
+    padding: 15px 12px ;
+    border-top-left-radius: 50px;
+border-bottom-right-radius: 50px;
+border: 0em;
 }
 .cascade{
     display:none;
@@ -69,11 +89,48 @@ color:whitesmoke
 }
 .cascade {
     list-style-type: none;
+    font-family: Dancing Script;
+
 }
 .cascades:hover .cascade{
     display: block;
 }
 .cascades{
     position:relative;
-    /* left: 100% */
+    font-family: Dancing Script;
+
+}
+.buttons_ul{
+    
+    
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+    padding: 0;
+    margin:0px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.buttons_ul li{
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+   
+}
+.buttons_ul button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: solid 0.5px black;
+   
+
+}
+
+.buttons_ul button:hover{
+    background-color: red;
+}
+
+
+.MyHeader_div{
+    display: inline-block;
 }
