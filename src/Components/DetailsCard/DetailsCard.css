@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=PT+Serif:ital,wght@1,700&display=swap');
+
+
+.DetailsDiv{
+    margin: 150px 30px;
+}
+.DetailsImgcontainer{
+   float: left;
+   padding: 30px;
+   height: 400px;
+   width: 400px;
+
+}
+.DetailsParagraph{
+    text-align: justify;
+    margin: 150px 30px;
+    text-indent: 50px;
+    padding: 30px;
+}
+.DetailsH2{
+    margin: 150px 0px 100px 0px;
+    text-decoration: underline;
+    font-family: PT Serif;
+
+}
