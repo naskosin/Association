@@ -61,16 +61,7 @@ transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
     background-color: blue;
 
 }
-.position__left{
-    position: relative;
-    top: 250px;
-    right: 800px
-}
-.position__right{
-    position: relative;
-    top: 250px;
-    left: 800px
-}
+
 @keyframes fade{
     
     0%{ opacity: 0;

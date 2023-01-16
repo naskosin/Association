@@ -68,7 +68,7 @@ console.log(count)
     <div className="dots">
      
 {spanCount.map((item, index)=>{
-  return  <span onClick={onClickHandler} title = {index}className={count===spanCount[index] ? "myDots" : "myDots active"} ></span>
+  return  <span onClick={onClickHandler} className={count===spanCount[index] ? "myDots" : "myDots active"} ></span>
 })}
     </div>
     </>

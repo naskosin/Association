@@ -16,16 +16,22 @@
 
 
 export async function loginPas(email, password){
-    let res =  fetch("http://localhost:3030/users/login", {
+    let res = await fetch("http://localhost:3030/users/login", {
         method: 'POST',
         headers: {
             'content-type': 'applications/json',
         },
         body: JSON.stringify({email, password})
     })
-    const result = await res;
-    const data = await result.json();
-    return data;
+    //const result = await res;
+    console.log(res)
+    const data = await res.json();
+    if(res.ok){
+      return  data;
+    }else{
+        throw data.message;
+    }
+    
     
   
 
@@ -39,8 +45,13 @@ export async function register (user, email, password){
         },
         body: JSON.stringify({user, email, password})
     })
-    let result = await res.json();
-    return result;
+    let jsonResult = await res.json();
+    if (res.ok){
+        return jsonResult;
+      }else{
+        throw jsonResult.message;
+      }
+
 }
 
 

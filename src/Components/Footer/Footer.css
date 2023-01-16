@@ -11,10 +11,12 @@ footer{
     padding: 15px;
     background-color: #0074D9;
     list-style-type: none;
-
+    font-size: 20px;
 }
+
 .footer_nav{
     background-color: #0074D9;
+   text-decoration: none;
 
 }
 .description__img{
@@ -24,10 +26,18 @@ footer{
 .description__ul{
     list-style-type: none;
     text-align: left;
-    font-size: 20px;
+    font-size: 25px;
     width: 30%;
     margin-left: 150px;
- 
+    text-decoration: none;
+
+}
+.description__ul a{
+    margin-left: 10px;
+    text-decoration: none;
+font-weight: 500;
+font-style: bold;
+
 }
 i{
     color:white;
@@ -36,5 +46,5 @@ i{
 .fab {
     color: aliceblue;
     font-size: 20px;
-    background-color: black;
+   
 }

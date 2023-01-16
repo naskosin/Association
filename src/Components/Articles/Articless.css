@@ -22,7 +22,7 @@ text-align: center;
     width: 25%;
     text-align: left;
     color:black;
-    background-color: aliceblue;
+   opacity: 0.9;
     margin: 2% calc((12%/6));
     background: #d59bf6; 
     border-radius: 50px;

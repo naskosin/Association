@@ -2,10 +2,10 @@ import  './Register.css';
 
 import { register} from '../../loginService';
 import { useRef } from 'react';
-
+import { useNotifyContext } from '../../notifyContext';
 export const Register = ()=>{
-
-
+const notification = useNotifyContext()
+console.log(notification)
   const nasko = Promise.resolve(123);
   nasko.then(data=>console.log(data));
   const use = useRef('');
@@ -40,3 +40,4 @@ export const Register = ()=>{
         <button>Login</button>
     </form>)
 }
+

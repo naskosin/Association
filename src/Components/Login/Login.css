@@ -11,6 +11,16 @@ button {
 }
 input,
 label {
-  width: 40%;
+  width: 30%;
   height: 40px;
+  border-radius: 15px;
+}
+
+.errorInput{
+  border: solid 2px red;
+}
+.errorParagraph{
+  color: red;
+  font-family: PT Serif;
+
 }

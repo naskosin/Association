@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
+import './CarouselComponent.css';
 const image1 = "Пластична-хирургия.jpg";
 const image2 = "Пластична-естетична-хирургия-1.webp";
 const image3 = "estetikplastikverekonstruktifcerrahijpg_fc4a.jpg";
 const image4 = "at-home-face-lift.jpg";
 
-const par1 = "Help";
+const par1 = "Помощ";
 const par2 = "Закрила";
 const par3 = "Съвет";
-const par4 = "Помощ";
+const par4 = "Надежда";
 
 export const CarouselComponent = ({ image }) => {
   const [count, setCount] = useState(0);
   const [imgClassName, setImageClassName] = useState("div Active");
-  const [images, setImages] = useState(image);
+  
   const paragraphs = [par1, par2, par3, par4];
 
   useEffect(() => {
@@ -30,7 +31,7 @@ export const CarouselComponent = ({ image }) => {
 
   const onTransitionEndHandler = () => {
     if (count === 4) {
-      console.log("work");
+      
       setImageClassName("div");
       setCount(0);
     }

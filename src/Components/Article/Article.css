@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=PT+Serif:ital,wght@1,700&display=swap');
 
 
 .article_h2{
@@ -6,6 +6,7 @@
     border-bottom: solid 1px blue;
     padding: 5px;
     font-size: 2rem;
+   font-family: PT Serif;
 
 }
 
@@ -17,21 +18,41 @@
     text-overflow: ellipsis;  
 
     display: -webkit-box ;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     white-space: normal;
     width:80%;
     margin: 50px auto;
 }
-.articlep:hover{
-    color:red;
-    text-align: center;
-    font-style: italic;
-
-    background-color: #fef6ec;
-    display: block ;
+/* .articlep:hover{ */
+    /* color:red; */
+    /* text-align: center; */
+    /* font-style: italic; */
+/*  */
+    /* background-color: #fef6ec; */
+    /* display: block ; */
+    /*  */
+    /* white-space: normal; */
+    /* width:90%; */
+    /* margin: 10px auto; */
+/* } */
+.ArticleSpan{
+    position: relative;
     
-    white-space: normal;
-    width:90%;
-    margin: 10px auto;
+
+    list-style: none ;
+    text-decoration: none;
+    left: 350px;
+    top:-70px;
+   
+    width: 15%;
+    
+}
+.ArticleSpan a{
+    text-decoration: none;
+    margin:15px;
+    font-size: 30px;
+    color: whitesmoke;
+    width: 100%;
+
 }

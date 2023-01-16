@@ -1,32 +1,39 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { useNotifyContext } from "../../notifyContext";
 import { useAuthContext } from "../../authContext";
+import { useLocation } from "react-router-dom";
+
 export const Header = () => {
+  const { user, setUser, logOut } = useAuthContext();
+  const {notification} = useNotifyContext();
+  const { pathname } = useLocation();
 
-  const {user, setUser, logOut} = useAuthContext();
+ 
 
-
-//setUser({user: 'Nasko', email: 'peter@abv.bg', _id: '35c62d76-8152-4626-8712-eeb96381bea8', accessToken: '40cc7165ccd1308dacae93ed6ac6ad9f798e51c6f39086ec4bcd2563a869d00f'})
-
+  //setUser({user: 'Nasko', email: 'peter@abv.bg', _id: '35c62d76-8152-4626-8712-eeb96381bea8', accessToken: '40cc7165ccd1308dacae93ed6ac6ad9f798e51c6f39086ec4bcd2563a869d00f'})
+  console.log(pathname);
   console.log(user);
 
   let loggedNavigation = (
     <nav>
       <p className="MyHeader_p">
-        Hi, <span>{user.email}</span>!
+       Здравей, <span>{user.email}</span>!
       </p>
       <ul className="MyHeader_ul">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" style={pathname==="/" ? { borderBottom: "solid 2px white" }:{ color: "black" } }>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/contacts">Contacts</Link>
+          <Link to="/contacts" style={pathname==="/contacts" ? { borderBottom: "solid 2px white" }:{ color: "black" }} >Contacts</Link>
         </li>
         <li>
-          <Link to="/forum">Forum</Link>
+          <Link to="/forum" style={pathname==="/forum" ? { borderBottom: "solid 2px white" }:{ color: "black" }}  >Forum</Link>
         </li>
         <li>
-          <Link to="/articles">Статии</Link>
+          <Link to="/articles" style={pathname==="/articles" ? { borderBottom: "solid 2px white" }:{ color: "black" }} >Articles</Link>
         </li>
         <li className="cascades">
           Cascade
@@ -56,19 +63,19 @@ export const Header = () => {
     <nav>
       <ul className="MyHeader_ul">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/"  style={pathname==="/" ? { borderBottom: "solid 2px white" }:{ color: "black" }}  >Home</Link>
         </li>
         <li>
-          <Link to="/articles">Articles</Link>
+          <Link to="/articles"  style={pathname==="/articles" ? { borderBottom: "solid 2px white" }:{ color: "black" }}   >Articles</Link>
         </li>
         <li>
-          <Link to="/forum">Forum</Link>
+          <Link to="/forum"  style={pathname==="/forum" ? { borderBottom: "solid 2px white" }:{ color: "black" }}    >Forum</Link>
         </li>
         <li>
-          <Link to="/register">Register</Link>
+          <Link to="/register" style={pathname==="/register" ? { borderBottom: "solid 2px white" }:{ color: "black" }}  >Register</Link>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          <Link to="/login" style={pathname==="/login" ? { borderBottom: "solid 2px white" }:{ color: "black" }}  >Login</Link>
         </li>
       </ul>
     </nav>
@@ -76,14 +83,26 @@ export const Header = () => {
 
   return (
     <header className="MyHeader">
+            {notification ? <p className="notification">{notification}</p>:''}
+
       <div className="MyHeader_div">
-      <h1 className="MyHeader_h1">APEX</h1>
-      <ul className="buttons_ul">
-        <li><button>Жалби</button></li>
-        <li><button>Консултации</button></li>
-        <li><button><Link to='/info'>Информация</Link></button></li>
-        <li><button>Текуща информация</button></li>
-      </ul>
+        <h1 className="MyHeader_h1">APEX</h1>
+        <ul className="buttons_ul">
+          <li>
+            <button>Жалби</button>
+          </li>
+          <li>
+            <button>Консултации</button>
+          </li>
+          <li>
+            <button>
+              <Link to="/info">Информация</Link>
+            </button>
+          </li>
+          <li>
+            <button>Текуща информация</button>
+          </li>
+        </ul>
       </div>
       {user.email ? loggedNavigation : guestNavigation}
     </header>

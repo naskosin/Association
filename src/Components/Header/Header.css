@@ -1,136 +1,147 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-
-
-.MyHeader{
-    display: inline-block;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Pattaya&display=swap');
+.MyHeader {
+  display: inline-block;
 }
-.MyHeader_h1{
- 
-    margin:20px 50px;
-    color: white;
+.MyHeader_h1 {
+  margin: 20px 50px;
+  color: white;
+
+text-shadow: 5px 1px 11px white
+;
 }
 .MyHeader a {
-    font-family: Dancing Script;
-    
+  font-family: Dancing Script;
 }
 
-.MyHeader a:hover{
-    border-top: solid 2px white;
+.MyHeader a:hover {
+  border-bottom: solid 2px white;
 }
-
 
 .MyHeader_p {
-    font-family: Spicy Rice;
+  font-family: Pattaya;
 }
 
 .MyHeader_ul {
-    display:flex;
-flex-direction:row;
-color:blueviolet;
-gap: 60px;
-list-style-type: none;
-margin: 0px 50px;
-align-items: center;
-justify-content:center;
-font-size: 30px;
+  display: flex;
+  flex-direction: row;
+
+  gap: 60px;
+  list-style-type: none;
+  margin: 0px 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
 
-.MyHeader_ul li{
-text-decoration: none;
+.MyHeader_ul li {
+  text-decoration: none;
 }
-.MyHeader a{
-    text-decoration: none;
-    width: 40%;
-    
-}
-nav{
-    background-color: #0074D9;
-   display: inline-block;
-    width:50%;
-    padding: 50px;
-   
-
-}
-.MyHeader{
-    width:100%;
-
-    background-color: #0074D9;
-
-
-}
-.MyHeader_p{
-    position: absolute;
-   top: 0px;
-    right: 50px;
-    font-size: 20px;
-color:whitesmoke
-
-
-}
-.button{
-    width: 100%;
-    background-color: none;
-    color: black;
-    padding: 15px 12px ;
-    border-top-left-radius: 50px;
-border-bottom-right-radius: 50px;
-border: 0em;
-}
-.cascade{
-    display:none;
-    position: absolute;
-    top: 40px;
+.MyHeader a {
+  text-decoration: none;
+  width: 40%;
   
-    background-color: aqua;
-    margin: 0;
-    padding: 0;
+}
+nav {
+  background-color: #0074d9;
+  display: inline-block;
+  width: 50%;
+  padding: 50px;
+}
+.MyHeader {
+  width: 100%;
+
+  background-color: #0074d9;
+}
+.MyHeader_p {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.button {
+  width: 100%;
+  background-color:  #9896f1;
+  color: black;
+  padding: 15px 12px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: solid 1px white;
 }
 .cascade {
-    list-style-type: none;
-    font-family: Dancing Script;
+  display: none;
+  position: absolute;
+  top: 35px;
 
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
 }
-.cascades:hover .cascade{
-    display: block;
+.cascade {
+  list-style-type: none;
+  font-family: Dancing Script;
 }
-.cascades{
-    position:relative;
-    font-family: Dancing Script;
+.cascades:hover .cascade {
+  display: block;
+}
+.cascades {
+  position: relative;
+  font-family: Dancing Script;
+}
+/* .cascade:hover { */
+  /* background: white; */
+/* } */
+.buttons_ul {
+  display: grid;
+  grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+  padding: 0;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.buttons_ul li {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  font-family: Pattaya;
+ 
+}
+.buttons_ul a {
+  list-style-type: none;
+  font-family: Pattaya; color:black
+ 
+}
+.buttons_ul a:hover {
+  list-style-type: none;
+ border: none;
 
+ 
 }
-.buttons_ul{
-    
-    
-    display: grid;
-    grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
-    padding: 0;
-    margin:0px;
-    justify-content: center;
-    align-items: center;
-    
-}
-.buttons_ul li{
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-   
-}
-.buttons_ul button{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    border: solid 0.5px black;
-   
-
+.buttons_ul button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: solid 0.5px black;
+  background-color:  #8ef6e4;
+  font-family: Pattaya;
 }
 
-.buttons_ul button:hover{
-    background-color: red;
+.buttons_ul button:hover {
+  background-color: #9c4b9e;
 }
 
-
-.MyHeader_div{
-    display: inline-block;
+.MyHeader_div {
+  display: inline-block;
+}
+.notification{
+  background-color: green;
+  color: white;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  font-size: 30px;
 }
