@@ -4,11 +4,12 @@ export const Footer = () => {
   return (
     <footer>
       <div className="description">
-        <img src="Flag_of_the_Red_Cross.svg.png" className="description__img" />
+        <img src="Flag_of_the_Red_Cross.svg.png" className="description__img" alt="FooterImage"/>
         <p className="description__p">
           Spinning is one of the most widespread and popular techniques around
           the world for that can be done in both saltwater and freshwater.
         </p>
+        
       </div>
 
       <ul className="description__ul">
@@ -43,12 +44,18 @@ export const Footer = () => {
           </Link>
         </li>
         <li className="footer__li">
+    
           <i className="fa-solid fa-phone"></i>
           <Link className="footer__a" to="/contacts">
             Contacts
           </Link>
         </li>
       </ul>
+      <form className="Newsletter">
+        <label htmlFor="Newsletter">Newsletter</label>
+        <input type='text' id="Newsletter" placeholder="ivan@abv.bg"/>
+        <button>Subscribe</button>
+      </form>
     </footer>
   );
 };

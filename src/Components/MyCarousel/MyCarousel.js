@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { CarouselCard } from "./CarouselCard/CarouselCard";
 import "./MyCarousel.css";
 const image1 = "Пластична-хирургия.jpg";

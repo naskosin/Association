@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 
-const initialState = {user:'', email:'', accessToken: ''}
+
 
 export const useLocalStrage=(key, initialState)=>{
 

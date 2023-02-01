@@ -17,3 +17,19 @@ form{
 .colors {
     color: red
 }
+.errorInput{
+  border: solid 2px red;
+}
+.errorParagraph{
+  color: red;
+  font-family: PT Serif;
+
+}
+@media only screen and (max-width: 600px) {
+  button{
+      width:60px;
+      height: 30px;
+  
+  }
+ 
+}

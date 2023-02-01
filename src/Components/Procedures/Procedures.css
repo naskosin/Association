@@ -4,8 +4,30 @@
  * @description Generic Table Component
 
 */
-.sectionCarousel{
+.selected{
+    border-top: solid 3px red;
+    border-bottom: solid 3px red;
+
+}
+
+.images{
+    margin: 0 auto;
+}
+.image{
+    width:500px;
+    height:500px;
+    border: none;
+}
+.active{
+    border: solid 2px
+}
+.carouselSection{
 text-align: center;
+margin: 80px 0 0 0;
+}
+.carouselSection p{
+    margin:  0;
+
 }
 .img{
     margin: 100px 0 0 0;
@@ -24,7 +46,7 @@ text-align: center;
     display: flex;
     margin: 0 auto;
     width: 200px;
-    border: solid 2px black;
+ 
     flex-wrap: nowrap;
     justify-content: space-between;
     
@@ -32,7 +54,8 @@ text-align: center;
 
 }
 .carouselImg{
-   
+
+
     width: 280px;                                                                                                                                        
     min-width:  200px;
     height: 200px;

@@ -1,5 +1,4 @@
 import "./Forum.css";
-import { Link } from "react-router-dom";
 import { commentService } from "../cmmentService";
 import { createComment } from "../cmmentService";
 import { Comment } from "./Comment/Comment";
@@ -57,7 +56,7 @@ const {user } = useAuthContext();
             <Comment updateData={updateData} key={x._id} comment={x} />
           ))
         ) : (
-          <p>No fishes!</p>
+          <p>No comments!</p>
         )}
       </div>
       <form onSubmit={createCommentHandler}>

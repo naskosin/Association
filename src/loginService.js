@@ -16,7 +16,7 @@
 
 
 export async function loginPas(email, password){
-    let res = await fetch("http://localhost:3030/users/login", {
+    let res = await fetch("https://nasko-apex.onrender.com/users/login", {
         method: 'POST',
         headers: {
             'content-type': 'applications/json',
@@ -26,6 +26,7 @@ export async function loginPas(email, password){
     //const result = await res;
     console.log(res)
     const data = await res.json();
+    console.log(data.status)
     if(res.ok){
       return  data;
     }else{
@@ -38,7 +39,7 @@ export async function loginPas(email, password){
 }
 
 export async function register (user, email, password){
-    let res = await fetch("http://localhost:3030/users/register", {
+    let res = await fetch("http://nasko-apex.onrender.com/users/register", {
         method: 'POST',
         headers: {
             'content-type': 'applications/json',
@@ -72,10 +73,3 @@ export async function register (user, email, password){
 //   
 //   };
 
-function nasko(apiUrl, body){
-    if(body){
-        if(body.method = 'POST'){
-        let res
-        }
-    }
-}

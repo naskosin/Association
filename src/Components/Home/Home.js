@@ -1,6 +1,6 @@
 import './Home.css';
 import { CarouselComponent } from '../Carousel/CarouselComponent';
-import { useReducer } from 'react';
+
 
 const image1 = "Пластична-хирургия.jpg";
 const image2 = "Пластична-естетична-хирургия-1.webp";

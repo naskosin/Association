@@ -1,14 +1,15 @@
 import "./Login.css";
 
 import { loginPas } from "../../loginService";
-import { useRef, useState, useReducer } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useNotifyContext } from "../../notifyContext";
 import { useAuthContext } from "../../authContext";
 
 export const Login = () => {
+
+  const {  setUser } = useAuthContext();
   const initialErrorState = { email: '', password: ''};
-  const { user, setUser } = useAuthContext();
   const [errors, setErors] = useState(initialErrorState);
   const {notificationReactor} = useNotifyContext();
 
@@ -41,15 +42,14 @@ export const Login = () => {
        
         }
         break;
+        default: return;
     };
 
 
   };
   const loginhandler = (e) => {
     e.preventDefault(e);
-    const formData = new FormData(e.currentTarget);
-    //const email = formData.get('email');
-    //onst password = formData.get('pas');
+
 
     const email = ema.current.value;
     const password = pas.current.value;

@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import './CarouselComponent.css';
-const image1 = "Пластична-хирургия.jpg";
-const image2 = "Пластична-естетична-хирургия-1.webp";
-const image3 = "estetikplastikverekonstruktifcerrahijpg_fc4a.jpg";
-const image4 = "at-home-face-lift.jpg";
+
 
 const par1 = "Помощ";
 const par2 = "Закрила";
@@ -48,13 +45,13 @@ export const CarouselComponent = ({ image }) => {
               style={{ transform: `translate(-${count * 100}%)` }}
               onTransitionEnd={onTransitionEndHandler}
             >
-              <img className="slide" src={item} />
+              <img className="slide" src={item} alt="CarouselImage"/>
               <p className="slideInHome"
             style={
-              count % 2 == 0
+              count % 2 === 0
                 ? { animationName: "fade", color: "black" }
                 : { animationName: "fader" }
-            }>{paragraphs[index]}</p>)
+            }>{paragraphs[index]}</p>
             </div>
           );
         })}
@@ -64,13 +61,13 @@ export const CarouselComponent = ({ image }) => {
               style={{ transform: `translate(-${count * 100}%)` }}
               onTransitionEnd={onTransitionEndHandler}
             >
-              <img className="slide" src={image[0]} />
+              <img className="slide" src={image[0]} alt="CarouselImage" />
               <p className="slideInHome"
             style={
-              count % 2 == 0
+              count % 2 === 0
                 ? { animationName: "fade", color: "black" }
                 : { animationName: "fader" }
-            }>{paragraphs[0]}</p>)
+            }>{paragraphs[0]}</p>
             </div>
 
       </div>

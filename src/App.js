@@ -6,7 +6,8 @@ import { Header } from './Components/Header/Header';
 import { Forum } from './Components/Forum';
 import { Home } from './Components/Home/Home';
 import { Login } from './Components/Login/Login';
-import { Hamster } from './Components/Hamster';
+import {Images} from'./Components/Images/Images';
+import { Claims } from './Components/Claims/Claims';
 import { YourCarousel } from './Components/Yourcarousel/YourCarousel';
 import {  Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -17,9 +18,12 @@ import { MyCarousel } from './Components/MyCarousel/MyCarousel';
 import { Info } from './Components/Information/Info';
 import { ArticleDetails } from './Components/Articles/ArticleDetails';
 import {PageNotFound} from './Components/PageNotFound/PageNotFound';
-import {useAuthContext} from './authContext';
+import { Consultation } from './Components/Consultation/Consultation';
 import { GuardRoute } from './Components/GuardComponent/GuardRoutes';
 import { NotifyContextProvider } from './notifyContext';
+import { CurrentInfo } from './Components/CurrentInformation/CurrentInfo';
+import { ContactForm } from './Components/ContactForm/ContactForm';
+import { Newsletter } from './Components/Newsletter/Newsletter';
 function App() {
 
   
@@ -49,16 +53,23 @@ function App() {
       <main>
       <Routes>
       <Route path='/' element={<Home/>} />
-      <Route path='/contacts/:id' element={<ArticleDetails/>}/>
+      <Route path='/articles/:id' element={<ArticleDetails/>}/>
       <Route path='/procedures' element={<Procedures/>}/>
       <Route path='*' element={<PageNotFound/>}/>
       <Route path='/info' element={<Info/>} />
       <Route path='/contacts' element={<Contacts/>} />
       <Route path='/mycarousel' element={<MyCarousel/>} />
       <Route path='/yourcarousel' element={<YourCarousel/>} />
+      <Route path='/images'element={<Images/>} />
+      <Route path='/consultation'element={<Consultation/>} />
+      <Route path='/claims'element={<Claims/>} />
+      <Route path='/currentinfo'element={<CurrentInfo/>} />
+      <Route path='/news'element={<Newsletter/>} />
+      <Route path='/contactForm'element={<ContactForm/>} />
+
       <Route path ='/articles' element={<Articles/>}/>
         <Route path='/forum' element={<Forum/>} />
-        <Route path='/hamster' element={<Hamster/>}/>
+      
         <Route element={<GuardRoute/>}>
        <Route path='/login'  element={<Login />}/> 
         <Route path='/register' element={<Register/>}/>

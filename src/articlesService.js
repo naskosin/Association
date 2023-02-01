@@ -1,11 +1,11 @@
 export const articlesService = ()=>{
 
-    return fetch("http://localhost:3030/data/articles").then(data=>data.json())
+    return fetch("https://nasko-apex.onrender.com/data/articles").then(data=>data.json())
 
 }
 
 export const articleDetailsService =(token, id)=>{
-    return fetch(`http://localhost:3030/data/articles/${id}`,  {
+    return fetch(`https://nasko-apex.onrender.com/data/articles/${id}`,  {
     method: 'GET',
     headers: {
       'content-type': 'applications/json',

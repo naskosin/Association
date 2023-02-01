@@ -21,10 +21,7 @@ z-index: 0;
     overflow: hidden;
     padding: 20px;
     border-top-left-radius: 40px;
-    /* animation-duration: 3s; */
-    /* animation-name: slidein; */
-    /* animation-iteration-count: infinite; */
-    /* animation-direction: alternate; */
+  
 }
 /* @keyframes slidein { */
     /* from { */
@@ -83,4 +80,23 @@ font-size: 15px;
     border-bottom-right-radius: 50px;
     background-color: antiquewhite;
 
+}
+
+
+@media only screen and (max-width: 600px) {
+  .buttons{
+text-align: center;
+    width: 20%;
+   margin-bottom: 0px;
+    position: relative;
+font-size: 10px;
+    top: 20px;
+ left: 25%;
+  display:inline-block;
+  margin-right: 20px;
+    padding: 0;
+    
+
+}
+ 
 }

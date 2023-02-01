@@ -6,13 +6,13 @@ const NotifyContext = createContext();
 
 export const NotifyContextProvider =({children})=>{
 
-    const [notification, setNotification] = useState('nasko');
+    const [notification, setNotification] = useState('');
 
     const notificationReactor =(notification)=>{
         setNotification(notification);
         setTimeout(()=>{
             setNotification('')
-        }, 3000)
+        }, 5000)
     }
 
     return(

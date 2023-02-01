@@ -56,3 +56,40 @@
     width: 100%;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .articlep{
+        color:blue;
+        text-align: justify;
+        font-style: italic;
+        overflow: hidden;  
+        text-overflow: ellipsis;  
+    height: auto;
+        display: -webkit-box ;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        width:80%;
+        margin: 10px auto;
+    }
+    .ArticleSpan{
+        position: relative;
+        
+    
+        list-style: none ;
+        text-decoration: none;
+        left: 40%;
+        top:-10px;
+       
+        width: 15%;
+        
+    }
+    .ArticleSpan a{
+        text-decoration: none;
+  
+        font-size: 18px;
+        color: whitesmoke;
+      
+    
+    }
+    }

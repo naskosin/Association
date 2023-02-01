@@ -48,8 +48,7 @@ export const Comment = ({ comment, updateData }) => {
       <button className="buttons" onClick={editModeHandler}>
         Edit
       </button>
-      <button className="buttons" onClick={editModeHandler}>
-        Delete
+      <button className="buttons" onClick={editModeHandler}>Delete
       </button>
     </div>
   );

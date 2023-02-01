@@ -14,6 +14,7 @@ label {
   width: 30%;
   height: 40px;
   border-radius: 15px;
+  color: aqua;
 }
 
 .errorInput{
@@ -24,3 +25,13 @@ label {
   font-family: PT Serif;
 
 }
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    margin: 50px auto;
+  }
+  button {
+    width: 60px;
+    height: 30px;
+  }
+  }

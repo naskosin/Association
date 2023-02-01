@@ -1,0 +1,36 @@
+.Newsletter{
+    width:30%;
+    margin:0;
+    display: inline-block;
+}
+.Newsletter>label{
+    width:100%;
+    margin:10px;
+    display:inline-block;
+    font-size: 30px;
+    color: purple;
+}
+
+.Newsletter>input{
+    width:50%;
+    margin:0;
+    display:inline-block;
+   height: 25px;
+   border: none;
+
+}
+
+.Newsletter>button{
+    width:25%;
+    margin:2px;
+    display:inline-block;
+    border: none;
+    border-radius: 30px;
+    vertical-align: middle;
+    background-color: aqua;
+}
+
+
+.ContactForm{
+    display: flex;
+}

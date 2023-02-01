@@ -13,13 +13,14 @@ export const ArticleDetails = () => {
     const {user} = useAuthContext();
     
     const token = user.accessToken;
+    console.log(token);
     const {pathname} = useLocation();
     const { id } = useParams();
     console.log(pathname)
     const [ article, setArticle] = useState()
     useEffect(()=>{
-        articleDetailsService( token, id).then((data)=>{ setArticle(data)})
-    }, [token, id])
+        articleDetailsService(token, id).then((data)=>{ setArticle(data); console.log(token)})
+    }, [token,id])
  
 
   return (

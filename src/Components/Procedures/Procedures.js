@@ -8,18 +8,19 @@ const image5 = "AESTHETIC-PLASTIC-RECONSTRUCTIVE-SURGERY-main.webp";
 const image6 = "570463944other-procedures.png";
 
 export const Procedures = () => {
-  const image1 = "Пластична-хирургия.jpg";
+  const procedures = ["Лице", "Скули", "Чело", "Устни", "Вежди", "Нос"];
   const [width, setWidth] = useState(400);
   const [targetImage, setImage] = useState(image1);
   const [imgStyle, setImgStyle] = useState("carouselImg ImgTransitionOn");
-
+  const [price, setPrice] = useState('200');
   const [count, setCount] = useState(2);
+ 
   const images = [
     <img
       className="carouselImg"
       src={image1}
       style={{ transform: `translate(-${count * 100}%)` }}
-      alt=""
+      alt="CarouselImage"
     />,
     <img
       className="carouselImg"
@@ -53,9 +54,19 @@ export const Procedures = () => {
     />,
   ];
 
-  const clickHandler = (e) => {
-    setImage(e.target.src);
+  const changeOption = (e) => {
+    switch(e.target.value){
+      case "Лице": setPrice(10); break;
+      case "Чело": setPrice(20); break;
+      case "Скули": setPrice(40); break;
+      default: setPrice(0); break;}
   };
+
+  const clickHandler = (e)=>{
+    setImage(e.target.src)
+  }
+
+  
 
   const clickHandlerRight = (e) => {
     if (count < 8) {
@@ -76,14 +87,12 @@ export const Procedures = () => {
     }
   };
   const changeStyle = (e) => {
-    console.log(count);
+
     if (count === 8) {
-      console.log(count);
       setImgStyle("carouselImg");
       setCount(2);
     }
     if (count === 1) {
-      console.log(count);
       setImgStyle("carouselImg");
       setCount(7);
     }
@@ -91,6 +100,17 @@ export const Procedures = () => {
 
   return (
     <section className="carouselSection">
+      <select  name='procedures' onChange={changeOption}>
+        {procedures.map((x, index) => (
+          <option  key={index}>
+            {x}
+          </option>
+        ))}
+      </select>
+      <p>{price}</p>
+      <div>
+        <p>{procedures[count - 2]}</p>
+      </div>
       <i
         type="button"
         onClick={clickHandlerLeft}
@@ -103,65 +123,74 @@ export const Procedures = () => {
         className="fa-solid fa-chevron-right position__right"
       ></i>
 
-      <div className="carousel">
+      <div className="carousel" >
         <div className="carouselDiv" onClick={clickHandler}>
           <img
-            className={imgStyle}
+          className={imgStyle}
             src={image5}
             style={{ transform: `translate(-${count * 100}%)` }}
-            alt="imag"
+            alt="CarouselImage"
           />
           <img
-            className={imgStyle}
+                    className={imgStyle}
+
             src={image6}
             style={{ transform: `translate(-${count * 100}%)` }}
-            alt="image"
+            alt="CarouselImage"
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image1}
             style={{ transform: `translate(-${count * 100}%)` }}
-            alt="imag"
+            alt="CarouselImage"
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image2}
             style={{ transform: `translate(-${count * 100}%)` }}
-            alt="imag"
+            alt="CarouselImage"
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image3}
             style={{ transform: `translate(-${count * 100}%)` }}
-            alt="imag"
+            alt="CarouselImage"
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image4}
             style={{ transform: `translate(-${count * 100}%)` }}
             alt="imag"
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image5}
             style={{ transform: `translate(-${count * 100}%)` }}
             alt="imag"
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image6}
             style={{ transform: `translate(-${count * 100}%)` }}
             alt="imag"
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image1}
             style={{ transform: `translate(-${count * 100}%)` }}
             alt="imag"
             onTransitionEnd={changeStyle}
           />
           <img
-            className={imgStyle}
+                              className={imgStyle}
+
             src={image2}
             style={{ transform: `translate(-${count * 100}%)` }}
             alt="imag"
@@ -182,11 +211,15 @@ export const Procedures = () => {
         })}
       </div>
       <div className="img">
-        <img src={targetImage} style={{ width: `${width}px` }} />
+        <img
+          src={targetImage}
+          style={{ width: `${width}px` }}
+          alt="CarouselImage"
+        />
       </div>
       <p id="controls">
         <label className="label" htmlFor="in"></label>
-        Change hue / accent-color:
+        Zoom:
         <input
           id="in"
           type="range"

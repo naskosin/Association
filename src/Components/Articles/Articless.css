@@ -9,11 +9,11 @@ text-align: center;
 
 }
 .articlesUl{
-    text-align: left;
+    
     display: inline-block;
     list-style-type: none;
     padding: 0px;
-    margin: 0px 50px;
+    margin: 0px auto;
     width: 100%;
 }
 .articlesUl li{
@@ -37,3 +37,37 @@ text-align: center;
     text-indent: 25px;
     width: 90%;
 }
+.loading{
+    font-size: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .articlesUl{
+    
+        display: inline-block;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px auto;
+        width: 100%;
+    }
+    .articlesUl li{
+        padding:20px;
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+        color:black;
+       opacity: 0.9;
+        margin: 2% calc((12%/6));
+        background: #d59bf6; 
+        border-radius: 50px;
+        height: auto;
+        overflow: hidden;
+        box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.44);
+      
+    
+    
+    }
+    .articlesUl li p{
+        text-indent: 25px;
+        width: 90%;
+    }
+    }

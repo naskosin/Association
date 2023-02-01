@@ -11,10 +11,10 @@ export const YourCarousel = () => {
 
 
   const items = [
-    <img src={image1} />,
-    <img src={image2} />,
-    <img src={image3} />,
-    <img src={image4} />,
+    <img src={image1} alt="CarouselImage"/>,
+    <img src={image2} alt="CarouselImage"/>,
+    <img src={image3} alt="CarouselImage"/>,
+    <img src={image4} alt="CarouselImage"/>,
   ];
 
 
@@ -41,7 +41,8 @@ const onClickHandler =(e)=>{
 
 console.log(count)
  
-  const data = ["1", "2", "3", "4"];
+
+
 
   return (
       <>
@@ -59,7 +60,7 @@ console.log(count)
             // className={count % 2 == 0 ? "slideIn" : "slideIn2"}
 
 
-            style= {count % 2 == 0 ?{ animationName: 'fade', color: 'black' } : { animationName: 'fader' }}
+            style= {count % 2 === 0 ?{ animationName: 'fade', color: 'black' } : { animationName: 'fader' }}
             >Help me</p>
           </div>
         );
