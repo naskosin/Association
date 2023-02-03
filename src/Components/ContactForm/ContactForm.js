@@ -22,7 +22,7 @@ export const ContactForm = ()=>{
     <input
       type="text"
       id="Name"
-      placeholder="ivan@abv.bg"
+      placeholder="Ivan"
       name="name"
     />
     <label htmlFor="email">Email</label>

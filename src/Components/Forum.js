@@ -51,12 +51,13 @@ const {user } = useAuthContext();
       {/* <img src='iprc_seized_banner.png'/> */}
 
       <div className="comments">
-        {comments ? (
+        {comments.length>0 ? (
           comments.map((x) => (
             <Comment updateData={updateData} key={x._id} comment={x} />
           ))
         ) : (
-          <p>No comments!</p>
+          <p className="loading">Loading   <i className="fas fa-spinner fa-pulse">
+          </i></p>
         )}
       </div>
       <form onSubmit={createCommentHandler}>

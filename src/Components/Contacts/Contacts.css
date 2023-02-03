@@ -29,3 +29,8 @@ svg{
 svg g{
     width: 100%;
 }
+.contacts__paragraph{
+    color:black;
+    text-decoration: underline;
+    font-size: 50px;
+}

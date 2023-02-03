@@ -1,5 +1,6 @@
 import { MyMap } from "../Map/Map";
-import './Contacts.css'
+import './Contacts.css';
+import {ContactForm} from  "../ContactForm/ContactForm";
 
 export const Contacts = ()=>{
     return(
@@ -27,7 +28,10 @@ export const Contacts = ()=>{
         </ul>
             </div>
         <MyMap className="contact"/>
-        
+        <p className="contacts__paragraph">Send us a message</p>
+
+        <ContactForm/>
+
         </section>
     )
 }

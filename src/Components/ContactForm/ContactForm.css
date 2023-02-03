@@ -1,9 +1,13 @@
-.Newsletter{
-    width:30%;
-    margin:0;
-    display: inline-block;
+.ContactForm{
+    display: flex;
+    width:50%;
+    border: solid 2px white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 30px;
+
 }
-.Newsletter>label{
+.ContactForm>label{
     width:100%;
     margin:10px;
     display:inline-block;
@@ -12,7 +16,7 @@
 }
 
 .ContactForm>input{
-    width:20%;
+    width:60%;
     margin:0;
     display:inline-block;
    height: 25px;
@@ -21,24 +25,21 @@
 }
 
 .ContactForm>textarea{
-    width:20%;
-    margin:0;
+    width:60%;
+        margin:0;
     height: 30%;
-   height: 50px;
+   height: 80px;
    border: none;
 
 }
 .ContactForm>button{
-    width:5%;
+    width:15%;
     margin:2px;
     display:inline-block;
     border: none;
     border-radius: 30px;
     vertical-align: middle;
-    background-color: aqua;
+    background-color: blueviolet;
+    color:white
 }
 
-
-.ContactForm{
-    display: flex;
-}
