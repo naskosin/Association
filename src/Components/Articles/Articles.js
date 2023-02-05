@@ -19,7 +19,7 @@ export const Articles = () => {
         {articles.length>0 ? (
           articles.map((x) => <Article key={x._id} article={x} />)
         ) : (
-          <p className="loading">Loading   <i className="fas fa-spinner fa-pulse">
+          <p className="loading">Loading...<i className="fas fa-spinner fa-pulse">
          </i></p>
         )}
       </ul>

@@ -5,7 +5,7 @@ import { Comment } from "./Comment/Comment";
 import { useAuthContext } from "../authContext";
 import { useEffect, useState } from "react";
 export const Forum = () => {
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState();
   const [dateState, setDateState] = useState(new Date());
 
 const {user } = useAuthContext();
@@ -51,14 +51,14 @@ const {user } = useAuthContext();
       {/* <img src='iprc_seized_banner.png'/> */}
 
       <div className="comments">
-        {comments.length>0 ? (
+        {comments ? (comments.length>0 ? (
           comments.map((x) => (
             <Comment updateData={updateData} key={x._id} comment={x} />
           ))
         ) : (
-          <p className="loading">Loading   <i className="fas fa-spinner fa-pulse">
+          <p className="loading">Loading...<i className="fas fa-spinner fa-pulse">
           </i></p>
-        )}
+        )) : <p>No comments</p>}
       </div>
       <form onSubmit={createCommentHandler}>
         <input name="text" className="newComment" />

@@ -71,8 +71,13 @@ export const Header = () => {
           Cascade
           <ul className="cascade">
             <li>
+              <Link to="/">Home
+              <ul className="cascadeSub">
+            <li>
               <Link to="/">Home</Link>
             </li>
+          </ul>
+          </Link> </li>
 
             <li>
               <Link to="/procedures">Procedures</Link>
